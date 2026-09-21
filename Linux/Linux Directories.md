@@ -151,9 +151,97 @@ Security analysts can investigate:
 ---
 
 # 8. `/tmp` — Temporary Files 
-/tmp is used for temporary files created by applications and users.
+`/tmp` is used for temporary files created by applications and users.
 
 temporary files may be automatically removed according to the system's configuration, often during reboot or through periodic cleanup.
 
 ---
 
+# 9. `/dev` — Device Files
+
+Linux represents many devices and kernel interfaces through files under `/dev`.
+
+## Examples:
+
+- `/dev/sda`
+- `/dev/sda1`
+- `/dev/null`
+- `/dev/tty`
+
+## Some examples:
+
+| Device File | Description |
+|--------------|--------------|
+| `/dev/sda` | disk device |
+| `/dev/sda1` | partition |
+| `/dev/null` | discards data |
+| `/dev/tty` | terminal device |
+
+## Important concept
+Linux follows the principle:
+
+> "Everything is a file"
+
+This doesn't literally mean every object is an ordinary disk file, but many system resources can be accessed through file-like interfaces.
+
+## Cybersecurity relevance
+/Dev is important when investigating:
+- Disk access
+- Mounted storage
+- Device activity
+- Privileged operations
+- Container environments
+
+Some device files can provide powerful access to underlying resources, so their permissions matter.
+
+---
+
+# 10. `/proc` — Process and Kernel Information 
+
+`/proc` is a virtual filesystem provided by the Linux kernel.
+
+It doesn't primarily contain ordinary files stored on disk. Instead, it exposes information about:
+- Running processes
+- CPU
+- Memory
+- Kernel
+- Hardware
+- System configuration
+
+## Example:
+
+- `/proc/cpuinfo`
+- `/proc/meminfo`
+- `/proc/version`
+- `/proc/uptime`
+
+### Cybersecurity relevance
+/proc is extremely useful for system enumeration and incident response.
+You can investigate:
+- Running processes
+- Process IDs
+- Process command lines
+- Memory information
+- Network-related information
+- Process relationships
+
+---
+
+# 11. `/usr` — User Programs and Resources 
+`/usr` contains a large portion of the system's user-space programs, libraries, and supporting resources.
+
+## Common subdirectories include:
+| Directory | Description |
+| --- | --- |
+| `/usr/bin` | Contains many user commands and executable programs |
+| `/usr/sbin` | Contains many system-administration programs |
+| `/usr/lib` | Contains libraries and other supporting files |
+| `/usr/share` | Contains architecture-independent data such as documentation, icons, and other shared resources |
+| `/usr/local` | Traditionally used for software installed locally by the system administrator rather than managed as part of the operating system's standard package set |
+
+## Cybersecurity relevance 
+defense analysts may examine /usr when:
+detecting installed programs,
+detecting suspicious binaries,
+detecting modified system files,
+and understanding available utilities.
