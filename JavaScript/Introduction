@@ -1,0 +1,128 @@
+# Introduction to JavaScript
+
+Before learning JavaScript, let's understand where it fits in web development.
+
+Every webpage is created using three building blocks:
+
+- **HTML**
+- **CSS**
+- **JavaScript**
+
+Let's discover what each one does with a simple example.
+
+---
+
+## 1. Why JavaScript?
+
+Every website you use today is built using three technologies that work together.
+
+Let's understand them using a simple example.
+
+### Example: Watching a Video on YouTube
+
+👉 You see a **Like** button below the video.
+
+- **HTML** creates the button.
+- **CSS** makes the button look attractive.
+- **JavaScript** makes the button interactive.
+
+For example, when you click the **Like** button, the like count can increase instantly without refreshing the page.
+
+### Another Example: Shopping Online
+
+👉 You see an **Add to Cart** button.
+
+- **HTML** displays the button.
+- **CSS** controls its appearance, such as its color, size, shape, and hover effects.
+- **JavaScript** performs the action when you click it.
+
+For example, JavaScript can add the product to your cart and update the cart count immediately.
+
+> [!IMPORTANT]
+> **HTML creates the content, CSS styles it, and JavaScript makes it interactive.**
+
+---
+
+## 2. What is JavaScript?
+
+**JavaScript** is a programming language that allows websites to:
+
+- Respond to user actions
+- Update content dynamically
+- Communicate with servers
+- Perform calculations
+- Create interactive experiences
+
+JavaScript can run directly in the browser and can also be used outside the browser with environments such as **Node.js**.
+
+---
+
+## 3. Where Does JavaScript Run?
+
+### 🌐 In the Browser
+
+JavaScript runs directly inside modern web browsers such as:
+
+- Google Chrome
+- Mozilla Firefox
+- Microsoft Edge
+- Safari
+
+No separate JavaScript installation is required to execute JavaScript in a modern browser.
+
+### 🟢 Outside the Browser
+
+Using **Node.js**, JavaScript can also run outside the browser.
+
+It can be used to build:
+
+- Servers
+- APIs
+- CLI tools
+- Backend applications
+- Automation tools
+
+---
+
+## 4. What Can You Build with JavaScript?
+
+JavaScript is one of the most versatile programming languages.
+
+It powers everything from interactive websites to backend applications.
+
+### JavaScript Can Build
+
+| Type | Example |
+|---|---|
+| 🌐 **Interactive Websites** | Dynamic webpages and animations |
+| 💻 **Web Applications** | Dashboards, online tools, and applications |
+| ⚙️ **Backend APIs** | Server-side applications and APIs |
+| 🎮 **Games** | Browser-based games |
+| 📱 **Mobile Apps** | Android and iOS applications |
+| 🖥️ **Desktop Apps** | Cross-platform desktop applications |
+| 🧩 **Browser Extensions** | Chrome and Firefox extensions |
+| 🤖 **Automation Scripts** | Task automation tools |
+
+### One Language. Endless Possibilities.
+
+Learn JavaScript and you can build:
+
+- 🌐 Websites
+- 💻 Web applications
+- ⚙️ Servers
+- 🎮 Games
+- 🧩 Browser extensions
+- 🤖 Automation tools
+- 📱 Mobile applications
+- 🖥️ Desktop applications
+- And much more
+
+---
+
+## 5. Your First JavaScript Code
+
+Let's write your very first line of JavaScript:
+
+```javascript
+console.log("Hello, World!");
+```
