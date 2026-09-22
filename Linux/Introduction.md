@@ -67,3 +67,12 @@ firefox <URL>
 ```
 
 e.g., firefox https://github.com
+
+---
+
+## Cybersecurity-Focused Linux Distributions
+
+- Kali Linux — The most well-known security distro; focused on penetration testing, vulnerability assessment, forensics, and security tools.
+- Parrot Security OS — Security-focused distro with penetration-testing, privacy, forensics, and development tools. Generally a bit more lightweight than Kali.
+- BlackArch Linux — Arch-based distro with a very large collection of penetration-testing tools. Better suited to experienced Linux users.
+- Tails — Privacy/anonymity-focused rather than penetration-testing-focused. Runs from removable media and minimizes traces on the computer.
