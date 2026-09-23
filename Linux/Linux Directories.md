@@ -36,12 +36,6 @@ The `/bin` directory traditionally contains essential executable commands requir
 - `mkdir`
 - `rm`
 
-**Example usage:**
-
-```bash
-ls /
-```
-
 ### Cybersecurity relevance
 Attackers and defenders both encounter commands from this directory during command-line activity. Security monitoring can therefore involve tracking unusual execution of standard utilities.
 
@@ -56,11 +50,6 @@ Attackers and defenders both encounter commands from this directory during comma
 - `reboot`
 - `shutdown`
 - `mkfs`
-
-### Example:
-```bash
-ip addr
-```
 
 ---
 
@@ -162,7 +151,6 @@ temporary files may be automatically removed according to the system's configura
 Linux represents many devices and kernel interfaces through files under `/dev`.
 
 ## Examples:
-
 - `/dev/sda`
 - `/dev/sda1`
 - `/dev/null`
@@ -224,24 +212,3 @@ You can investigate:
 - Memory information
 - Network-related information
 - Process relationships
-
----
-
-# 11. `/usr` — User Programs and Resources 
-`/usr` contains a large portion of the system's user-space programs, libraries, and supporting resources.
-
-## Common subdirectories include:
-| Directory | Description |
-| --- | --- |
-| `/usr/bin` | Contains many user commands and executable programs |
-| `/usr/sbin` | Contains many system-administration programs |
-| `/usr/lib` | Contains libraries and other supporting files |
-| `/usr/share` | Contains architecture-independent data such as documentation, icons, and other shared resources |
-| `/usr/local` | Traditionally used for software installed locally by the system administrator rather than managed as part of the operating system's standard package set |
-
-## Cybersecurity relevance 
-defense analysts may examine /usr when:
-detecting installed programs,
-detecting suspicious binaries,
-detecting modified system files,
-and understanding available utilities.
