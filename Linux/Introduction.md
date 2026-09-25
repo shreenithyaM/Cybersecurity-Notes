@@ -28,32 +28,6 @@ A Linux distribution (distro) is Linux bundled with software and tools.
 
 ---
 
-## Users & Permissions
-### Users
-to be added here if needed.
-- `root` — Superuser with full privileges.
-- Regular user — Limited privileges.
-- System user — Used by services/processes.
-
-### File Permissions
-to be added here if needed.
-- r = Read  
-- w = Write  
-- x = Execute
-  
-Permission Categories:
-- u = Owner  
-- g = Group  
-- o = Others
-
-Example:
-- rwxr-xr--
-  - Owner → rwx  
-  - Group → r-x  
-  - Others → r--
-
----
-
 ## Update Kali Linux
 ``` sudo
 sudo apt update && sudo apt upgrade
