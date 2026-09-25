@@ -135,7 +135,7 @@ Security analysts can investigate:
 
 ---
 
-# **8. `/tmp` — Temporary Files **
+# **8. `/tmp` — Temporary Files**
 `/tmp` is used for temporary files created by applications and users.
 
 temporary files may be automatically removed according to the system's configuration, often during reboot or through periodic cleanup.
