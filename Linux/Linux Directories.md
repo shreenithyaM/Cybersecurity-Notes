@@ -36,9 +36,6 @@ The `/bin` directory traditionally contains essential executable commands requir
 - `mkdir`
 - `rm`
 
-### Cybersecurity relevance
-Attackers and defenders both encounter commands from this directory during command-line activity. Security monitoring can therefore involve tracking unusual execution of standard utilities.
-
 ---
 
 # 3. `/sbin` — System Administration Commands
@@ -67,7 +64,7 @@ The root account is the traditional Linux superuser and has extensive privileges
 You may encounter:
 `sudo su`
 To leave the root shell:
-echo `exit`
+`exit`
 
 ### Cybersecurity relevance
 The root account has powerful privileges, so unauthorized access to a root shell can have severe security consequences.
@@ -126,7 +123,6 @@ Example:
 
 ### Cybersecurity relevance
 `/var/log` is extremely important for SOC and Blue Team work.
-
 Security analysts can investigate:
 - Failed login attempts
 - Successful authentication
