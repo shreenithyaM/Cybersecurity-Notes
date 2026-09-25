@@ -72,7 +72,7 @@ During penetration testing, privilege escalation refers to obtaining privileges 
 
 ---
 
-# 5. `/etc` — System Configuration
+# **5. `/etc` — System Configuration**
 
 `/etc` is one of the most important directories for Linux administration and cybersecurity.
 
@@ -110,7 +110,7 @@ Example:
 
 ---
 
-# 7. `/var` — Variable Data
+# **7. `/var` — Variable Data**
 `/var` contains data that changes while the system is running.
 
 **Examples include:**
@@ -135,7 +135,7 @@ Security analysts can investigate:
 
 ---
 
-# 8. `/tmp` — Temporary Files 
+# **8. `/tmp` — Temporary Files **
 `/tmp` is used for temporary files created by applications and users.
 
 temporary files may be automatically removed according to the system's configuration, often during reboot or through periodic cleanup.
