@@ -125,3 +125,39 @@ ls
 ```bash
 touch one.txt two.txt three.txt
 ```
+
+---
+
+## 6. cat — Read a file
+- **`cat`** stands for *concatenate*.
+- It is mainly used to read and display the contents of a file.
+
+## Syntax:
+
+```bash
+cat filename
+```
+
+## Example:
+
+```bash
+cat notes.txt
+```
+
+If `notes.txt` contains:
+
+```
+Linux is easy.
+I am learning Linux.
+```
+
+The command displays:
+
+```
+Linux is easy.
+I am learning Linux.
+```
+
+## Important Notes:
+- `cat` reads/displays the file.
+- `cat` does not modify the file when used normally.
