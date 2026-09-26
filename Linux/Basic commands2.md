@@ -43,8 +43,8 @@ Hello Linux
 I am learning Kali Linux
 ```
 **Important:** `>` vs `>>`
-- `>`   → create/overwrite 
-- `>>`  → append 
+- `>` replaces the existing content.
+- `>>` adds to the existing content.
 
 For example:
 ```bash
