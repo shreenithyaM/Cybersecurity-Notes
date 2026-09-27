@@ -122,5 +122,6 @@ For example:
 - `notes.txt`
 
 `rm file*` removes:
+
 <img width="559" height="224" alt="image" src="https://github.com/user-attachments/assets/50923c4d-3fb1-468e-8169-243ae351f346" />
 
