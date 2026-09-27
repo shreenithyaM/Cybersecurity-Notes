@@ -23,7 +23,8 @@ rmdir Projects
 - This removes the `Projects` folder only if it is empty.
 -  **rmdir** → Delete an empty folder
 
-<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/ead4e33f-1b7d-43c7-b5e0-b00595180df7" />
+<img width="167" height="70" alt="image" src="https://github.com/user-attachments/assets/cf973983-6d82-4a46-8012-5688b3f23410" />
+
 
 ---
 
@@ -56,6 +57,9 @@ rm -rf Projects
 ```
 - This removes the **Projects** folder and all its contents forcefully.
 
+<img width="323" height="230" alt="image" src="https://github.com/user-attachments/assets/085b23ed-a50d-4976-a334-57a9b8a107ab" />
+
+
 > [!CAUTION]
 >  **Be careful with `rm -rf`. Deleted files normally do not go to the Trash/Recycle Bin.**
 
@@ -71,6 +75,9 @@ rm -rf Projects
 ```bash
 rm *.txt
 ```
+
+<img width="399" height="172" alt="image" src="https://github.com/user-attachments/assets/f5ee5655-98b3-4932-9fa0-0ff1b5c0596d" />
+
 
 - This removes all files that end with `.txt`.
 
@@ -98,6 +105,8 @@ but keeps:
 
 > `n*` → Anything starting with n
 
+<img width="455" height="213" alt="image" src="https://github.com/user-attachments/assets/e36983cd-a8d1-48ff-bcbc-c27e3167a842" />
+
 ### Remove Files Starting with "file"
 
 to remove files starting with "file":
@@ -113,6 +122,5 @@ For example:
 - `notes.txt`
 
 `rm file*` removes:
-- `file1.txt`
-- `file2.txt`
-- `file3.jpg`
+<img width="559" height="224" alt="image" src="https://github.com/user-attachments/assets/50923c4d-3fb1-468e-8169-243ae351f346" />
+
