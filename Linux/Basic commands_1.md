@@ -4,7 +4,7 @@
 
 ---
 
-## 1. pwd — Where Am I?
+## 1. pwd — (Print Working Directory) Where Am I?
 - Imagine you open Google Maps and tap “Your Location” to see where you are.
 - In Linux, `pwd` does something similar — it tells you which directory (folder) you are currently in.
 
@@ -21,7 +21,7 @@ pwd
 
 ---
 
-## 2. ls — What’s Here?
+## 2. ls — (List) What’s Here?
 - Imagine you open a folder on your computer and look at all the files and folders inside it.
 - In Linux, `ls` does the same thing — it shows you what is inside the current directory.
 
@@ -91,7 +91,7 @@ cd ~
 
 # Create directories/folders & files
 
-## 4. mkdir — Create a New Folder
+## 4. mkdir — (Make Directory) Create a New Folder
 
 - Imagine you are on your computer and want to create a new folder to keep your files organized.
 - In Linux, `mkdir` is used to create a new directory (folder).
@@ -164,7 +164,7 @@ ls
 
 ---
 
-## 6. cat — Read a File
+## 6. cat — (Concatenate) Read a File
 - Imagine you have a text file on your computer and you open it to read what is written inside.
 - In Linux, `cat` lets you see the contents of a file directly in the terminal.
 
