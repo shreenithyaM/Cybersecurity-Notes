@@ -11,6 +11,8 @@ rm notes.txt
 - This deletes the `notes.txt` file.
 - **rm** → Delete a file
 
+<img width="351" height="114" alt="image" src="https://github.com/user-attachments/assets/ae49da3e-0c43-4d5d-bd2a-9e3226439579" />
+
 ---
 
 ## 2. `rmdir` — (Remove Directory) Remove an Empty Folder
@@ -20,6 +22,8 @@ rmdir Projects
 ```
 - This removes the `Projects` folder only if it is empty.
 -  **rmdir** → Delete an empty folder
+
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/ead4e33f-1b7d-43c7-b5e0-b00595180df7" />
 
 ---
 
@@ -34,6 +38,8 @@ rm -r Projects
 - Here, `-r` means recursive.
 - It removes the folder and everything inside it.
 - **rm -r** → Delete a folder and everything inside
+
+<img width="248" height="166" alt="image" src="https://github.com/user-attachments/assets/39b0d3e5-1b78-4610-a79c-f3a459fcb78f" />
 
 ---
 
