@@ -259,3 +259,9 @@ Then experiment with:
 - `chmod 777 test.txt`
 
 Don't just memorize what these numbers mean. Look at `ls -l` after each command and observe the change.
+
+
+
+## References:
+- [Reference 1](https://www.howtogeek.com/437958/how-to-use-the-chmod-command-on-linux/)
+- [Reference 2](https://www.howtogeek.com/67987/htg-explains-how-do-linux-file-permissions-work/)
