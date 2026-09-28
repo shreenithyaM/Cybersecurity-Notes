@@ -48,4 +48,5 @@ sudo deluser john
 This removes the user account but normally leaves the user's home directory.
 To remove the user's home directory as well:
 ```bash
-d sudo deluser --remove-home john
+sudo deluser --remove-home john
+```
