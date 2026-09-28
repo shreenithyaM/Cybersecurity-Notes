@@ -7,12 +7,18 @@
 mv old.txt new.txt
 ```
 - Renames `old.txt` to `new.txt`.
+<img width="329" height="222" alt="image" src="https://github.com/user-attachments/assets/aa101494-99a9-467a-8fa7-663d361e620b" />
+
 
 ```bash
 mv file.txt Documents/
 ```
 - Moves `file.txt` into the `Documents` directory.
 
+<img width="374" height="282" alt="image" src="https://github.com/user-attachments/assets/726c78be-a72e-421b-ba09-6658b7c71c41" />
+
+>[!NOTE]
+> The command is correct if Documents/ exists in your current directory
 ---
 
 ## cp — Copy
@@ -22,17 +28,7 @@ mv file.txt Documents/
 cp file.txt backup.txt
 ```
 
-- Creates a copy of `file.txt` named `backup.txt`.
-
-```bash
-cp file.txt Documents/
-```
-- Copies `file.txt` into `Documents/`.
-- To copy a directory and its contents:
-
-```bash
-cp -r Projects Projects_backup
-```
+<img width="388" height="338" alt="image" src="https://github.com/user-attachments/assets/11b221ab-e726-41d4-a491-311a59542519" />
 
 ---
 
@@ -52,6 +48,7 @@ grep -i "linux" notes.txt
 ```bash
 grep "Linux" file1.txt file2.txt
 ```
+<img width="375" height="208" alt="image" src="https://github.com/user-attachments/assets/0deab78a-1bba-495c-b81d-b78f57a2e89f" />
 
 ---
 
