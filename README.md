@@ -1,3 +1,6 @@
+<img width="2048" height="768" alt="image" src="https://github.com/user-attachments/assets/eef0a0bb-0b58-4298-a2e5-b83926ca272e" />
+
+
 # Cybersecurity Notes
 
 A structured collection of technical concepts and practical knowledge required to build a strong foundation in Cybersecurity.
