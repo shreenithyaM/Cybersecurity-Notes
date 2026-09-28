@@ -50,9 +50,6 @@ Topics include:
 - `echo`
 - `nano`
 - `find`
-- `locate`
-- `grep`
-- `history`
 - and more
 
 📄 [Basic Commands - 1](./Basic%20commands_1.md)
