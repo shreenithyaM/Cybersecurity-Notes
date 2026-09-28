@@ -24,25 +24,12 @@ drwxr-xr-x
 
 ### Break it down:
 
-| Symbol | Description |
-|---------|--------------|
-| d       | Directory    |
-| rwx     | Owner's permissions |
-| r-x     | Group's permissions |
-| r-x     | Others' permissions |
-
 It can be broken down as:
 - `d` : File type (Directory)
+- `-` : File
 - `rwx` : Owner permissions (Read, Write, Execute)
 - `r-x` : Group permissions (Read, No Write, Execute)
 - `r-x` : Others permissions (Read, No Write, Execute)
-
-### File Type Symbols:
-| Symbol | Meaning |
-|---------|---------|
-| -       | Regular file |
-| d       | Directory |
-| l       | Symbolic link |
 
 ---
 
@@ -83,6 +70,7 @@ Therefore:
 - Group can read and execute.
 - Others can only read.
 
+<img width="563" height="265" alt="image" src="https://github.com/user-attachments/assets/b9ccd483-0539-43cd-b892-68186ae83462" />
 
 ---
 
@@ -94,7 +82,7 @@ These are used with `chmod`.
 |---------|---------|
 | +       | Add permission |
 | -       | Remove permission |
-| =       | Set permissions exactly |
+| =       | Set permissions exactly (add new, remove existing) |
 
 ---
 
@@ -121,6 +109,9 @@ chmod u+x filename
 - `+` → add
 - `x` → execute
 
+<img width="424" height="303" alt="image" src="https://github.com/user-attachments/assets/83386f62-b97a-43c0-ab7a-a028bb7f3fd5" />
+
+
 ### Remove permission
 
 Remove write permission from the group:
@@ -132,6 +123,9 @@ chmod g-w filename
 - `g` → group
 - `-` → remove
 - `w` → write 
+
+<img width="429" height="169" alt="image" src="https://github.com/user-attachments/assets/290041ab-db80-49ad-ac90-63cbe66c200a" />
+
  
 ### Set permission 
  
@@ -140,6 +134,10 @@ Set owner's permission to read only:
 ```bash 
 chmod u=r filename 
 ```
+
+<img width="433" height="174" alt="image" src="https://github.com/user-attachments/assets/2b0e575d-d5e9-4703-b565-3da5b59319e5" />
+
+
 > [!note]
 > `=` means set the specified permissions, rather than simply adding/removing one permission.
 
@@ -191,8 +189,10 @@ Therefore, the permission code is: **755** which corresponds to **rwxr-xr-x**.
 ```bash
 sudo chown kali filename
 ```
-
 Changes the owner to `kali`.
+
+<img width="418" height="303" alt="image" src="https://github.com/user-attachments/assets/f4f531db-ef96-4984-bfe8-af560d32819c" />
+
 
 ### Change owner + group
 ```bash
@@ -207,6 +207,8 @@ sudo chown kali:root filename
 ```bash
 ls -l
 ```
+<img width="427" height="307" alt="image" src="https://github.com/user-attachments/assets/d19e8377-ee52-4411-b85a-f13073fd1929" />
+
 
 > [!important]
 > By default, the chown command changes the user and group ownership of only the single file or directory you specify on the command line
