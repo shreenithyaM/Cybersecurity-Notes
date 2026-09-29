@@ -10,7 +10,7 @@ Topology describes how devices (computers, routers, etc.) are **connected and c
 - Performance degrades as more devices are added.
 - **Use case**: Small networks, temporary setups.
 
-<img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/7a13c1b9-177e-491f-b1e5-0d7f7ac6645a" />
+<img width="1024" height="559" alt="5854e1d6-1df7-4b89-84a6-896b06e8bd26" src="https://github.com/user-attachments/assets/a08cb26e-ce4b-4ad1-8fc7-c7967618e4cd" />
 
 ---
 ## B. Star Topology
