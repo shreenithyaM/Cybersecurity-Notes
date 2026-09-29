@@ -1,3 +1,6 @@
+<img width="1024" height="318" alt="image" src="https://github.com/user-attachments/assets/e6875041-69ec-441c-a504-57964907f016" />
+
+
 # Linux
 
 This folder contains my Linux notes and practical commands that I am learning as part of my Cybersecurity journey.
