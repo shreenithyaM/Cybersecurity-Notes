@@ -1,3 +1,4 @@
+
 # Introduction to Computer Networks
 
 ## **What is a computer network?**
@@ -5,8 +6,8 @@ A computer network is the interconnection of two or more devices(node or host) t
 
 Example: In a typical home, devices like smartphones, laptops, and smart TVs connect to a Wi-Fi router. The router acts as a central hub, allowing the devices to access the internet and share data. For example, you could download a movie on your laptop and stream it to your smart TV over the network. This is a simple example of a computer network in everyday life.
 
-<img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/c93ec191-d155-40cc-ae5c-118c91708c5a" />
 
+<img width="1024" height="559" alt="43ab147d-73cb-4975-8b81-aa587108d52d" src="https://github.com/user-attachments/assets/3ffe1e2d-be00-4f16-baba-2b296e49cc89" />
 
 ---
 
