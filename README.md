@@ -1,4 +1,5 @@
-<img width="2048" height="768" alt="image" src="https://github.com/user-attachments/assets/eef0a0bb-0b58-4298-a2e5-b83926ca272e" />
+<img width="1024" height="318" alt="image" src="https://github.com/user-attachments/assets/2d2046bb-6bf0-45dd-846a-e9b95230194a" />
+
 
 
 # Cybersecurity Notes
