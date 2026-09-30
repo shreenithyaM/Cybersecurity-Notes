@@ -1,4 +1,6 @@
-### VPN (Virtual Private Network)
+# VPN & Proxy
+
+## VPN (Virtual Private Network)
 A **VPN** is a service that creates a **secure, encrypted connection** between your device and the Internet.
 - It hides your real IP address and encrypts your online traffic.
 - Think of it as a **private tunnel** for your data on the public Internet.
@@ -24,7 +26,8 @@ A **VPN** is a service that creates a **secure, encrypted connection** betwe
 <img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/4b70a21f-dd76-455e-8aaa-dee44d7175b3" />
 
 ---
-### Proxy Server
+
+## Proxy Server
 A **Proxy** is an **intermediate server** that forwards your requests to websites.
 - It acts like a **middleman** between your device and the Internet.
 - Unlike VPN, it **does not always encrypt traffic**.
