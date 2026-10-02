@@ -52,14 +52,7 @@ IPv6 uses 128 bits, compared with IPv4's 32 bits.
 
 That means IPv6 can provide an enormous number of addresses.
 
-| Feature | IPv4 | IPv6 |
-|---------|--------|--------|
-| **Address size** | 32 bits | 128 bits |
-| **Example** | `192.168.1.10` | `2001:db8::10` |
-| **Number of addresses** | ~4.3 billion | ~3.4 × 10³⁸ |
-| **Notation** | Decimal | Hexadecimal |
-
-For learning networking, it's useful to master IPv4 and subnetting first, because the concepts are easier to visualize.
+> For learning networking, it's useful to master IPv4 and subnetting first, because the concepts are easier to visualize.
 
 ---
 
