@@ -18,7 +18,7 @@ So:
 
 `192 . 168 . 1 . 10`
 
-`8     8     8    8` = **32 bits**
+`8     8     8    8 = **32 bits**`
 
 Every device on an IPv4 network can have an IP address, such as:
 
@@ -40,13 +40,8 @@ Think of an IP address like a house address:
 
 IPv6 is the newer version of the Internet Protocol, designed largely because IPv4 has a limited number of addresses.
 
-### IPv4:
-
-- `192.168.1.10`
-
-### IPv6:
-
-- `2001:db8:1234:5678:abcd:ef01:2345:6789`
+- IPv4: `192.168.1.10`
+- IPv6: `2001:db8:1234:5678:abcd:ef01:2345:6789`
 
 IPv6 uses 128 bits, compared with IPv4's 32 bits.
 
@@ -87,13 +82,13 @@ Internet
 Google
 ```
 
-So you can think of the default gateway as the door out of your local network.
+So you can think of the <mark>default gateway as the door out of your local network.</mark>
 
 ### Typical Home Network Configuration:
-- PC → 192.168.1.10
-- Phone → 192.168.1.11
-- Printer → 192.168.1.20
-- Router → 192.168.1.1
+- PC → `192.168.1.10`
+- Phone → `192.168.1.11`
+- Printer → `192.168.1.20`
+- Router → `192.168.1.1`
 
 The router's address `192.168.1.1` is commonly configured as the default gateway.
 
@@ -148,6 +143,7 @@ A `/24` network normally has 256 addresses:
 You could divide it into smaller networks.
 
 For example, divide it into four `/26` networks:
+`256 ÷ 4 = 64`
 
 - **Network 1:** `192.168.1.0` - `192.168.1.63`
 - **Network 2:** `192.168.1.64` - `192.168.1.127`
@@ -165,6 +161,7 @@ For example:
 | 192..168..1..128/26 | Servers      |
 | 192..168..1..192/26 | IoT devices   |
 
+
 ---
 
 ## 6. What does /24 mean?
@@ -177,42 +174,11 @@ The `/24` is called **CIDR notation**.
 
 > **CIDR - Classless Inter-Domain Routing**
 
-### Meaning of /24
-
-It means:
-- The first 24 bits are the network portion.
-
-For `/24`, the binary representation is:
-
-```
-11111111.11111111.11111111.00000000
-```
-which corresponds to:
-
-`255.255.255.0`
-
-### Explanation of IP and Subnet Mask
-
-So:
-- `192.168.1.10/24`
-- is equivalent to:
-  - **IP address:** `192.168.1.10`
-  - **Subnet mask:** `255.255.255.0`
-
 ### Common CIDR Notation Examples and Their Subnet Masks
 
-| CIDR | Subnet mask | Total addresses |
-|-------|--------------|----------------|
-| /8    | 255.0.0.0    | 16,777,216     |
-| /16   | 255.255.0.0 | 65,536         |
-| /24   | 255.255.255.0 | 256          |
-| /25   | 255.255.255.128 | 128        |
-| /26   | 255.255.255.192 | 64         |
-| /27   | 255..255..224   | 32         |
-| /28   | 255..255..240   | 16         |
+<img width="826" height="1136" alt="image" src="https://github.com/user-attachments/assets/7ce17578-4508-49ec-89d6-347f8abb59b2" />
 
 ### Notes on Usable Host Addresses in IPv4 Networks
-
 For typical IPv4 networks, usable host addresses are usually **2 fewer** than the total addresses because:
 - One address identifies the network.
 - One address is used for broadcast.
@@ -264,11 +230,3 @@ The computer sees:
 | Default gateway     | "Where do I send traffic destined for other networks?"|
 | IPv4 / IPv6       | "Which addressing protocol am I using?"               |
 
-### Analogy:
->- IP address = your room number
->- Subnet/network = your building
->- Subnet mask = tells you which part identifies the building vs.
-> room
->- Default gateway = the campus exit
->- Router = directs traffic between buildings/networks
->- Subnetting = dividing one large building/network into smaller sections
