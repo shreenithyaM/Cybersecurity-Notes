@@ -162,3 +162,6 @@ what is my IP (browser)
 | Security features     | dependent on application               | IPSEC is inbuilt in the IPv6 protocol       |
 | Header length         | Variable, 20-60 bytes                  | Fixed, 40 bytes                             |
 
+---
+
+<img width="1768" height="916" alt="image" src="https://github.com/user-attachments/assets/db3f05bd-fd09-4842-bb2d-b43aea648d32" />
