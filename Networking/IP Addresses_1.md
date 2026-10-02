@@ -56,6 +56,8 @@ what is my IP (browser)
 - Friend’s Laptop → `192.168.1.10`
 - Router → Public IP: `103.x.x.x`
 
+<img width="3290" height="1676" alt="image" src="https://github.com/user-attachments/assets/f9850e4f-2790-4c6c-94db-7285f684533f" />
+
 > [!note]
 > 
 > Both devices have the **same private IP (192.168.1.10)**
@@ -86,6 +88,7 @@ what is my IP (browser)
 ### Example:
 - Phone → 192.168.1.2
 - Laptop → 192.168.1.3
+
 
 <img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/ba1ce8f1-5712-4433-95e3-d9a8efc5fed7" />
 
