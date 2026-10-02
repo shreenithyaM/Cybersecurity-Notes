@@ -56,7 +56,8 @@ what is my IP (browser)
 - Friend’s Laptop → `192.168.1.10`
 - Router → Public IP: `103.x.x.x`
 
-<img width="3290" height="1676" alt="image" src="https://github.com/user-attachments/assets/f9850e4f-2790-4c6c-94db-7285f684533f" />
+<img width="3290" height="1676" alt="image" src="https://github.com/user-attachments/assets/30462e99-82e6-430c-aba4-a87e933224bf" />
+
 
 > [!note]
 > 
@@ -167,4 +168,5 @@ what is my IP (browser)
 
 ---
 
-<img width="1768" height="916" alt="image" src="https://github.com/user-attachments/assets/db3f05bd-fd09-4842-bb2d-b43aea648d32" />
+<img width="1179" height="611" alt="image" src="https://github.com/user-attachments/assets/d86ddff3-182c-4155-aaf3-5395145b1c53" />
+
