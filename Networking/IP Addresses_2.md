@@ -182,6 +182,8 @@ You'll frequently see IP addresses written like:
 
 The `/24` is called **CIDR notation**.
 
+> **CIDR - Classless Inter-Domain Routing**
+
 ### Meaning of /24
 
 It means:
