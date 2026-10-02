@@ -176,7 +176,8 @@ The `/24` is called **CIDR notation**.
 
 ### Common CIDR Notation Examples and Their Subnet Masks
 
-<img width="826" height="1136" alt="image" src="https://github.com/user-attachments/assets/7ce17578-4508-49ec-89d6-347f8abb59b2" />
+<img width="826" height="1136" alt="image" src="https://github.com/user-attachments/assets/35d26a89-047f-4f9e-9327-a48194b0f9fb" />
+
 
 ### Notes on Usable Host Addresses in IPv4 Networks
 For typical IPv4 networks, usable host addresses are usually **2 fewer** than the total addresses because:
