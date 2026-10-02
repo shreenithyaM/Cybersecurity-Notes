@@ -23,6 +23,31 @@ A **private IP address** is assigned to devices within a local network (LAN).
 - Private IPs are assigned either by a **DHCP server (usually the router)** or manually configured as **static IPs**.
 - Not accessible directly from the internet
 - Can be reused in different networks
+
+``` bash
+ipconfig (windows)
+ifconfig (linux)
+```
+
+---
+### B. Public IP Address
+A **public IP address** is assigned to a network so it can communicate over the internet.
+### Characteristics:
+- Assigned by **ISP (Internet Service Provider)**
+- **Globally unique**
+- Visible to websites and servers
+- Usually assigned to the **router**, not individual devices
+### Example:
+- Router → `49.xxx.xxx.xxx`
+
+``` bash
+curl ifconfig.me (cmd)
+what is my IP (browser)
+```
+  
+---
+---
+
 ### Example: Same Private IP in Different Networks
 #### Network A (Your Home)
 - Laptop → `192.168.1.10`
@@ -37,12 +62,12 @@ A **private IP address** is assigned to devices within a local network (LAN).
 > 
 > This is possible because private IPs are **reusable across networks**.
 
-## What Happens When Both Use the Internet?
-### Scenario 1: You Open a Website
+### What Happens When Both Use the Internet?
+#### Scenario 1: You Open a Website
 - Your router uses **NAT (Network Address Translation)**  
 - Converts:  
   `192.168.1.10 → 49.x.x.x`
-### Scenario 2: Your Friend Opens a Website
+#### Scenario 2: Your Friend Opens a Website
 - Their router also uses **NAT**
 - Converts:  
   `192.168.1.10 → 103.x.x.x`
@@ -52,32 +77,21 @@ A **private IP address** is assigned to devices within a local network (LAN).
 > Even though both devices have the **same private IP**, their **public IPs are different**, so:
 >
 > On the internet, they appear as **completely different devices**
+
 ### Key Concept
 - Private IP → Used **inside** a network  
 - Public IP → Used **on the internet**  
 - NAT → Translates private IP → public IP  
-### Ranges:
-- `10.0.0.0 – 10.255.255.255`
-- `172.16.0.0 – 172.31.255.255`
-- `192.168.0.0 – 192.168.255.255`
+
 ### Example:
 - Phone → 192.168.1.2
 - Laptop → 192.168.1.3
 
 <img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/ba1ce8f1-5712-4433-95e3-d9a8efc5fed7" />
 
+---
+---
 
----
-### B. Public IP Address
-A **public IP address** is assigned to a network so it can communicate over the internet.
-### Characteristics:
-- Assigned by **ISP (Internet Service Provider)**
-- **Globally unique**
-- Visible to websites and servers
-- Usually assigned to the **router**, not individual devices
-### Example:
-- Router → `49.xxx.xxx.xxx`
----
 ### C. Static IP Address
 - A static IP is an IP address that **never changes**
 - It is fixed for a device or internet connection
@@ -90,7 +104,9 @@ A **public IP address** is assigned to a network so it can communicate over th
 - Web servers
 - CCTV cameras
 - Remote access
+
 ---
+
 ### D. Dynamic IP Address
 - A dynamic IP is an IP address that **keeps changing**
 - Assigned automatically by ISP using DHCP
@@ -118,6 +134,9 @@ A **public IP address** is assigned to a network so it can communicate over th
 > 
 > All devices share the **same public IP address** but have **different private IP addresses** inside the network.
 
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/81b69ee2-7372-4aa5-8e05-a6f3fce0fa18" />
+
+
 ---
 ## 4. Common Misconceptions
 
@@ -143,4 +162,3 @@ A **public IP address** is assigned to a network so it can communicate over th
 | Security features     | dependent on application               | IPSEC is inbuilt in the IPv6 protocol       |
 | Header length         | Variable, 20-60 bytes                  | Fixed, 40 bytes                             |
 
----
