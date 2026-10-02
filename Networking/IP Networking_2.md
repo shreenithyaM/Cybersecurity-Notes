@@ -17,6 +17,7 @@ Each number is called an *octet* and ranges from 0 to 255.
 So:
 
 `192 . 168 . 1 . 10`
+
 `8     8     8    8` = **32 bits**
 
 Every device on an IPv4 network can have an IP address, such as:
@@ -72,11 +73,9 @@ Suppose your computer has:
 
 Your computer can communicate directly with devices on its local network.
 
-### Example:
+Example: **PC → 192.168.1.20**
 
-**PC → 192.168.1.20**
-
-But what if you want to access Google?
+> But what if you want to access Google?
 
 Google's server isn't on your local network.
 
@@ -122,7 +121,7 @@ A subnet mask tells a device which portion of an IPv4 address represents the net
 
 ```
 192.168.1 | 10
-   NETWORK | HOST
+  NETWORK | HOST
 ```
 
 The first three octets identify the network, while the last octet identifies the device within that network.
