@@ -27,8 +27,9 @@ Topics include:
 
 📄 [Topologies](./Network%20Topologies.md)
 
-📄 [Bonus Info](./Bonus%20Information.md)
+📄 [Bonus Information](./Bonus%20Information.md)
 
+📄 [Devices](./Networking%20Devices.md)
 
 
 ---
