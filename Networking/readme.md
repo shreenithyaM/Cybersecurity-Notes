@@ -21,12 +21,14 @@ Topics include:
 - LAN, WAN, MAN
 - Client and Server
 - Network Devices
-- Packets
-- Network Protocols
-- OSI Model
-- TCP/IP Model
 
-📄 [Introduction](./Introduction)
+
+📄 [Introduction](./Introduction.md)
+
+📄 [Topologies](./Network Topologies.md)
+
+
+
 
 ---
 
