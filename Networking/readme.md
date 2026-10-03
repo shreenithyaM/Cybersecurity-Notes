@@ -51,7 +51,10 @@ Topics include:
 - Default Gateway
 - CIDR Notation
 
-📄 [IP Addressing](./IP-Addressing)
+📄 [IP Addressing 1](./IP%20Addresses_1.md)
+
+📄 [IP Addressing 2](./IP%20Addresses_2.md)
+
 
 ---
 
