@@ -123,6 +123,7 @@ curl
 wget
 hostname
 resolvectl
+```
 
 📄 Networking Commands - 1
 
