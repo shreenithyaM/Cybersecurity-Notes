@@ -107,4 +107,141 @@ Example:
     - Wi-Fi adapter
     - Ethernet adapter
     - Bluetooth adapter
+
 ---
+
+## Example 1: Two Computers on the Same Network
+
+Imagine your home network:
+
+<img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/e0719c4b-74fa-4a46-a0be-47821f24fcf1" />
+
+
+Computer A wants to send a file to Computer B.
+
+### Step 1: Computer A Checks Computer B's IP
+- **Computer A:** 192.168.1.10
+- **Computer B:** 192.168.1.20
+
+They are in the same local network (`192.168.1.x`).
+
+**Conclusion:**
+> "Computer B is on my local network." 
+
+### Step 2: Computer A Needs Computer B's MAC Address
+- **Known:** B's IP address `192.168.1.20`
+- **Unknown:** B's MAC address 
+
+**Action:**
+- Sends an ARP broadcast:
+```plaintext
+"Who has 192.168.1.20?"
+```
+- Every device on the local network receives it.
+- **Computer B responds:**
+```plaintext
+"192.168.1.20 is my IP.
+My MAC address is BB-BB-BB-BB-BB-02."
+```
+
+### Step 3: Sending the Data
+Now, Computer A knows:
+- **IP address:** `192.168.1.20`
+- **MAC address:** `BB-BB-BB-BB-BB-02`
+
+**Communication flow:**
+```
+Computer A --> (MAC → BB-BB-BB-BB-BB-02) --> Computer B
+```
+This illustrates how, within the same network, a computer finds another device's MAC address using ARP.
+
+
+---
+
+## Example 2: Your Computer Goes to Google
+
+Now imagine:
+<img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/5405adf0-0d85-4f00-9eb0-b0d21da7e777" />
+
+```
+**Computer A**
+ IP: 192.168.1.10
+ MAC: AA-AA-AA-AA-AA-01
+
+    |
+    |
+  **Router**
+- IP: 192.168.1.1
+- MAC: CC-CC-CC-CC-CC-01
+
+You type: `google.com`
+```
+
+### 1. DNS Finds Google's IP
+Your computer asks DNS:
+```
+`google.com`
+     ↓
+`142.250.x.x`
+```
+Your computer now knows Google's IP address.
+
+### 2. Computer Checks Whether Google is Local
+Your computer has:
+- My IP: 192.168.1.10
+- Google IP: 142.250.x.x
+
+These are different networks.
+
+So, Computer A realizes:
+> "Google isn't on my local network. I need to send the data to my router." 
+
+### 3. Computer A Needs the Router's MAC Address
+Computer A already knows the router's IP:
+`192.168.1.1`
+But it needs the router's MAC.
+So it sends an ARP broadcast:
+> "Who has 192.168.1.1?"
+>
+> The router responds:
+> "192.168.1.1 is me.
+> My MAC is CC-CC-CC-CC-CC-01." 
+
+### 4. Computer Sends Data to the Router
+Now, Computer A sends:
+- Source MAC: AA-AA-AA-AA-AA-01
+- Destination MAC: CC-CC-CC-CC-CC-01 
+ - Source IP: 192.168.1.10 
+ - Destination IP: 142.250.x.x 
+ 
+**Notice this carefully:**
+> Destination IP = Google's server
+> 
+> Destination MAC = Your router 
+
+### 5. Router Forwards Data to Next Router
+The router looks at Google's IP and decides:
+> "I need to forward this toward Google." 
+sends the data to the next router.
+
+### Network Path Example:
+```
+Computer
+   |
+   | MAC
+   ↓
+Router 1
+   |
+   | MAC
+   ↓
+Router 2
+   |
+   | MAC
+   ↓
+Router 3
+   |
+   | MAC
+   ↓
+Google Server
+
+```
