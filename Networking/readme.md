@@ -71,7 +71,7 @@ Topics include:
 - Viewing MAC Addresses
 - Network Interfaces
 
-📄 [MAC Addresses](./MAC-Addresses)
+📄 [MAC Addresses](./MAC.md)
 
 ---
 
@@ -135,7 +135,7 @@ resolvectl
 Understanding how domain names are translated into IP addresses.
 
 Topics include:
-
+```
 What is DNS?
 
 DNS Resolution
@@ -155,7 +155,7 @@ NS
 TXT
 
 DNS Cache
-
+```
 Example:
 
 nslookup example.com
