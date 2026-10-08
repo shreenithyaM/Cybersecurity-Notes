@@ -16,7 +16,6 @@ The goal is not just to memorize commands or protocols, but to understand **how 
 Basic introduction to computer networking and why networking is important in Cybersecurity.
 
 Topics include:
-
 - What is Networking?
 - LAN, WAN, MAN
 - Client and Server
@@ -39,14 +38,10 @@ Topics include:
 Understanding how devices are identified and communicate using IP addresses.
 
 Topics include:
-
 - IPv4
 - IPv6
 - Public IP
 - Private IP
-- Loopback Address
-- Network Address
-- Broadcast Address
 - Subnet Mask
 - Default Gateway
 - CIDR Notation
@@ -63,10 +58,8 @@ Topics include:
 Understanding MAC addresses and their role in local network communication.
 
 Topics include:
-
 - What is a MAC Address?
 - MAC Address Format
-- MAC vs IP Address
 - ARP
 - Viewing MAC Addresses
 - Network Interfaces
@@ -80,7 +73,6 @@ Topics include:
 Understanding ports and commonly used network protocols.
 
 Topics include:
-
 - TCP
 - UDP
 - TCP vs UDP
@@ -102,146 +94,48 @@ Topics include:
 
 ---
 
-### 5. Networking Commands
-
-Common Linux commands used for networking and troubleshooting.
+### 5. DHCP
+Understanding how devices automatically receive network configuration.
 
 Topics include:
+- What is DHCP?
+- DHCP Client & Server
+- IP Address Assignment
+- Subnet Mask
+- Default Gateway
+- DNS Server
+- DHCP Lease
+- DHCP Process
 
-```text
-ip
-ping
-ss
-ip route
-ip neigh
-traceroute
-tracepath
-nslookup
-dig
-host
-curl
-wget
-hostname
-resolvectl
-```
+📄 [DHCP](./DHCP.md)
 
-📄 Networking Commands - 1
+---
 
-📄 Networking Commands - 2
-
-📄 Networking Commands - 3
-
-6. DNS
+### 6. DNS
 Understanding how domain names are translated into IP addresses.
 
 Topics include:
-```
-What is DNS?
-
-DNS Resolution
-
-DNS Records
-
-A Record
-
-AAAA Record
-
-CNAME
-
-MX
-
-NS
-
-TXT
-
-DNS Cache
-```
+- What is DNS?
+- DNS Resolution
+- DNS Records
+- A Record
+- AAAA Record
+- CNAME
+- MX
+- NS
+- TXT
+- DNS Cache
 Example:
 
 nslookup example.com
 dig example.com
 host example.com
 
-📄 DNS
+📄 [DNS](./DNS.md)
 
-7. DHCP
-Understanding how devices automatically receive network configuration.
+---
 
-Topics include:
-
-What is DHCP?
-
-DHCP Client & Server
-
-IP Address Assignment
-
-Subnet Mask
-
-Default Gateway
-
-DNS Server
-
-DHCP Lease
-
-DHCP Process
-
-📄 DHCP
-
-8. Routing
-Understanding how packets move between different networks.
-
-Topics include:
-
-Routing
-
-Routing Tables
-
-Default Routes
-
-Gateways
-
-Static Routes
-
-Network Interfaces
-
-Example:
-
-ip route
-ip route show
-
-📄 Routing
-
-9. Network Troubleshooting
-Learning how to identify and troubleshoot common networking problems.
-
-Topics include:
-
-Checking Network Interfaces
-
-Checking IP Configuration
-
-Testing Connectivity
-
-Checking Routes
-
-Testing DNS
-
-Checking Open Ports
-
-Tracing Network Paths
-
-Example workflow:
-
-ip addr
-ip route
-ping 8.8.8.8
-ping google.com
-nslookup google.com
-ss -tuln
-
-📄 Network Troubleshooting
-
-10. OSI Model
+### 7. OSI Model
 Understanding the seven layers of the OSI model.
 
 Layer	Name
@@ -255,107 +149,42 @@ Layer	Name
 
 📄 OSI Model
 
-11. TCP/IP Model
+---
+
+### 8. TCP/IP Model
 Understanding the TCP/IP model and how it relates to real-world networking.
 
 Topics include:
-
-Application
-
-Transport
-
-Internet
-
-Network Access
-
-TCP
-
-UDP
-
-IP
-
-ICMP
+- Application
+- Transport
+- Internet
+- Network Access
+- TCP
+- UDP
+- IP
+- ICMP
 
 📄 TCP/IP Model
 
-12. Network Security Basics
+---
+
+### 9. Network Security Basics
 Introduction to networking concepts commonly used in Cybersecurity.
 
 Topics include:
-
-Firewalls
-
-NAT
-
-VPN
-
-Proxy
-
-Network Segmentation
-
-IDS
-
-IPS
-
-Network Monitoring
-
-Secure Protocols
+- Firewalls
+- NAT
+- VPN
+- Proxy
+- Network Segmentation
+- IDS
+- IPS
+- Network Monitoring
+- Secure Protocols
 
 📄 Network Security Basics
 
-13. Packet Analysis
-Learning how network traffic can be captured and analyzed.
-
-Topics include:
-
-Packets
-
-Frames
-
-Headers
-
-TCP Three-Way Handshake
-
-DNS Queries
-
-HTTP/HTTPS Traffic
-
-ICMP Traffic
-
-Packet Capture
-
-Tools:
-
-Wireshark
-
-tcpdump
-
-📄 Packet Analysis
-
-14. Network Scanning
-Learning the fundamentals of identifying hosts, ports, and services in an authorized lab environment.
-
-Topics include:
-
-Host Discovery
-
-Port Scanning
-
-Service Detection
-
-Network Enumeration
-
-Understanding Scan Results
-
-Tools:
-
-Nmap
-
-Example:
-
-nmap <target-ip>
-
-📄 Network Scanning
+---
 
 🧠 Learning Approach
 For each networking concept or command, I try to understand:
