@@ -56,7 +56,7 @@ Now imagine remembering the IP addresses of hundreds of websites.
 
 **Clearly, that isn’t practical.**
 
-### DNS solves this problem by translating website names into IP addresses automatically.
+> DNS solves this problem by translating website names into IP addresses automatically.
 
 #### Example Network
 We’ll continue using the same home network from Part 1.
@@ -291,3 +291,10 @@ So when someone asks for a domain, the server simply replies with the data it al
 
 ---
 
+| DNS Record | Purpose | Example |
+|---|---|---|
+| **A** | Maps a domain to an IPv4 address | `example.com → 192.0.2.1` |
+| **AAAA** | Maps a domain to an IPv6 address | `example.com → 2001:db8::1` |
+| **CNAME** | Creates an alias pointing to another hostname | `www.example.com → example.com` |
+| **MX** | Specifies mail servers for the domain | `example.com → mail.example.com` |
+| **TXT** | Stores text; commonly used for verification, SPF, DKIM, and DMARC | `example.com → "v=spf1 ..."` |
