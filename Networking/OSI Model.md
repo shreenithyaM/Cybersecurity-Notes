@@ -24,7 +24,7 @@ It is the **structured design of a communication system** that defines how data 
 ---
 ## The 7 layers of the OSI model
 A common mnemonic: **"Please Do Not Throw Sausage Pizza Away"**
-1. Application Layer - [7 Application Layer](/OSI%20Layers/1.%20Application%20Layer.md)
+1. Application Layer - [Application Layer](./OSI%20Layers/1.%20Application%20Layer.md)
 2. Presentation Layer - [[6 Presentation Layer]]
 3. Session Layer - [[5 Session Layer]]
 4. Transport Layer - [[4 Transport Layer]]
