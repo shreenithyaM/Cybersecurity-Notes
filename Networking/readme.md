@@ -90,7 +90,7 @@ Topics include:
 | HTTPS | 443 | Secure Web Traffic |
 | SMTP | 25 | Email Transfer |
 
-📄 [Ports & Protocols](./Ports-and-Protocols)
+📄 [Ports & Protocols](./Ports%20&%20Protocols.md)
 
 ---
 
@@ -183,51 +183,24 @@ Topics include:
 - Network Monitoring
 - Secure Protocols
 
-📄 Network Security Basics
+📄 [VPN and Proxy](./VPN&Proxy.md)
 
 ---
 
 🧠 Learning Approach
 For each networking concept or command, I try to understand:
 
-What is it?
-
-Why is it used?
-
-What problem does it solve?
-
-What is the syntax?
-
-What do the options/flags mean?
-
-How does it work?
-
-What happens with different inputs?
-
-How can I observe it in practice?
-
-How can I troubleshoot it?
-
-Where is it useful in Cybersecurity?
+- What is it?
+- Why is it used?
+- How does it work?
+- How can I observe it in practice?
+- How can I troubleshoot it?
+- Where is it useful in Cybersecurity?
 
 🧪 Practice
 These notes are meant to be practiced, not just read.
 
-I use a Linux environment such as Kali Linux and isolated lab environments to run commands, observe network behavior, and understand how different protocols work.
+I use Kali Linux and isolated lab environments to practice networking commands and analyze protocols, while using Cisco Packet Tracer to design network topologies and practice routing and switching.
 
-Example:
-
-ip addr
-ip route
-ping 8.8.8.8
-ping google.com
-nslookup google.com
-ss -tuln
-
-I also practice using tools such as:
-
-Nmap
-Wireshark
-tcpdump
 
 The goal is to understand what is happening behind each command, instead of simply memorizing commands.
