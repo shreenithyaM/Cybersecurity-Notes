@@ -147,7 +147,7 @@ Layer	Name
 2	Data Link
 1	Physical
 
-📄 OSI Model
+📄 [OSI Model](./OSI%20Model.md)
 
 ---
 
@@ -163,6 +163,7 @@ Topics include:
 - UDP
 - IP
 - ICMP
+- Three way Hand-shake
 
 📄 TCP/IP Model
 
