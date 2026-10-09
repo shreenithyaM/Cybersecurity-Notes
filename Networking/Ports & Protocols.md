@@ -148,3 +148,130 @@ Use TLS-enabled configurations wherever possible.
 - **Port 139:** NetBIOS session-based communication.
 
 **Security tip:** Modern Windows networks generally use SMB directly over TCP port 445. Disable legacy NetBIOS services when they are not required.
+
+---
+
+# High-Priority Protocol Security Risks
+
+## 1. FTP — Cleartext Credential Theft
+- **Port:** 21/TCP (control)
+- **Risk:** Username, password, and transferred data can be exposed because standard FTP does not encrypt them.
+- **Example:** Imagine you log in to an FTP server using your username and password while connected to an untrusted network. Someone monitoring that traffic may be able to read your credentials.
+- **Impact:** An attacker could access files using the stolen credentials.
+- **Prevention:** Use SFTP over SSH or properly configured FTPS.
+
+## 2. SSH — Brute-Force Attacks
+- **Port:** 22/TCP
+- **Risk:** An attacker repeatedly tries different passwords to gain access to a remote server.
+- **Example:** You manage a Linux server using SSH with a weak password such as `admin123`. An attacker repeatedly attempts to log in until they guess the password.
+- **Impact:** The attacker may gain remote access and execute commands with the compromised account's privileges.
+- **Prevention:** Use SSH keys, disable password authentication where appropriate, restrict access, and use rate limiting.
+
+## 3. Telnet — Credential Sniffing
+- **Port:** 23/TCP
+- **Risk:** Telnet sends login credentials and session data without encryption.
+- **Example:** A network administrator logs into a router using Telnet on a shared network. Someone capturing network traffic may read the username and password.
+- **Impact:** Unauthorized access to the router or other systems using the same credentials.
+- **Prevention:** Replace Telnet with SSH.
+
+## 4. SMTP — Email Spoofing
+
+- **Port:** 25/TCP
+- **Risk:** An attacker forges email sender information to make a message appear to come from a trusted person or organization.
+- **Example:** You receive an email that appears to come from your company's IT department asking you to reset your password through a fake website.
+- **Impact:** Phishing, credential theft, fraud, or malware delivery.
+- **Prevention:** Configure SPF, DKIM, and DMARC, and train users to identify suspicious messages.
+
+> [!Important]
+>  SMTP itself is not inherently vulnerable to spoofing in every configuration. Email authentication controls such as SPF, DKIM, and DMARC help reduce sender impersonation.
+
+## 5. DNS — DNS Spoofing
+- **Port:** 53/TCP/UDP
+- **Risk:** An attacker manipulates DNS responses so a domain name resolves to the wrong IP address.
+- **Example:** You type your bank's website address, but manipulated DNS information directs your browser to a fake website designed to steal your login credentials.
+- **Impact:** Credential theft, phishing, and traffic redirection.
+- **Prevention:** Use secure DNS infrastructure, DNSSEC validation where supported, and trusted network configurations.
+
+## 6. HTTP — Traffic Sniffing
+- **Port:** 80/TCP
+- **Risk:** HTTP does not encrypt web traffic.
+- **Example:** You submit a login form over HTTP on an untrusted Wi-Fi network. A person monitoring the connection may be able to read the transmitted information.
+- **Impact:** Stolen credentials, exposed private information, and modified web content.
+- **Prevention:** Use HTTPS and avoid submitting sensitive information over unencrypted connections.
+
+## 7. HTTPS — Weak TLS Configuration
+
+- **Port:** 443/TCP for HTTP/1.1 and HTTP/2
+- **Risk:** Incorrect encryption settings or certificate validation problems can weaken the protection HTTPS is intended to provide.
+- **Example:** A company server supports outdated TLS settings. An attacker may exploit a known weakness if the required conditions are present.
+- **Impact:** Depending on the weakness, information could be exposed or the secure connection could be compromised.
+- **Prevention:** Use current TLS configurations, valid certificates, secure cipher suites, and proper certificate validation.
+
+> [!note]
+> HTTPS is designed to protect traffic. Its mere presence does not mean the website is unsafe.
+
+## 8. SMB — Unauthorized File Access
+
+- **Port:** 445/TCP
+- **Risk:** Improper permissions or vulnerable SMB services may allow unauthorized access to shared files or systems.
+- **Example:** A company shares a folder containing employee records but accidentally grants access to every user on the network.
+- **Impact:** Confidential data exposure, data modification, or malware spreading between systems.
+- **Prevention:** Apply least-privilege permissions, patch SMB systems, restrict network exposure, and disable SMBv1 where it is not needed.
+
+## 9. SNMP — Information Disclosure
+
+- **Ports:** 161/UDP (queries), 162/UDP (traps)
+- **Risk:** Weak SNMP community strings or insecure versions can expose information about network devices.
+- **Example:** A router uses a default community string that an unauthorized person discovers. Depending on the permissions, they may retrieve device information or modify settings.
+- **Impact:** Network mapping, device information disclosure, and potentially unauthorized configuration changes.
+- **Prevention:** Prefer SNMPv3 with authentication and encryption, change defaults, and restrict access to trusted management hosts.
+
+## 10. LDAP — Directory Enumeration
+
+- **Port:** 389/TCP or UDP, depending on the operation and implementation
+- **Risk:** Poorly restricted directory queries may reveal usernames, groups, computers, and other organizational information.
+- **Example:** An attacker can query an improperly exposed company directory and discover employee usernames and administrative groups.
+- **Impact:** The information may help the attacker target accounts or prepare further attacks.
+- **Prevention:** Restrict directory access, enforce appropriate permissions, and protect connections with TLS.
+
+## 11. DHCP — Rogue DHCP Server
+
+- **Ports:** 67/UDP (server), 68/UDP (client)
+- **Risk:** An unauthorized DHCP server provides clients with malicious network settings.
+- **Example:** You connect your laptop to a compromised office network. A rogue DHCP server assigns your laptop an attacker-controlled default gateway.
+- **Impact:** Traffic may be redirected, monitored, or disrupted, depending on the network and other security controls.
+- **Prevention:** Enable DHCP snooping on supported switches, secure network access, and monitor unexpected DHCP servers.
+
+
+## 12. RDP — Unauthorized Remote Access
+
+- **Port:** 3389/TCP/UDP
+- **Risk:** Exposed RDP services can be targeted using stolen credentials, password guessing, or vulnerabilities.
+- **Example:** A Windows computer exposes RDP directly to the Internet and uses a weak password. An attacker obtains access and may operate the computer remotely.
+- **Impact:** Data theft, unauthorized control, or ransomware deployment.
+- **Prevention:** Use a VPN or secure gateway, enable MFA where supported, restrict access, and keep systems patched.
+
+
+## 13. NFS — Insecure File Exports
+
+- **Port:** Commonly 2049/TCP/UDP, depending on configuration
+- **Risk:** Incorrect export rules or file permissions expose shared files to unauthorized clients.
+- **Example:** A Linux server shares a sensitive directory with an overly broad set of network clients.
+- **Impact:** Unauthorized reading or modification of files, depending on the permissions.
+- **Prevention:** Restrict exports to trusted clients, apply least privilege, and use appropriate authentication and access controls.
+
+
+## 14. BGP — Route Hijacking
+
+- **Port:** 179/TCP
+- **Risk:** Incorrect or malicious routing announcements can divert Internet traffic from its intended path.
+- **Example:** A network announces a route for an IP address range that it does not legitimately control. Other networks may accept the announcement and send traffic along the wrong path.
+- **Impact:** Traffic interception, service disruption, or misrouting.
+- **Prevention:** Apply route filtering, prefix validation, RPKI-based Route Origin Validation, and appropriate routing policies.
+
+## 15. MySQL — Unauthorized Database Access
+- **Port:** 3306/TCP
+- **Risk:** An exposed database, weak credentials, or excessive permissions can allow unauthorized access to stored data.
+- **Example:** A developer leaves a database port accessible from the public Internet and uses a weak database password.
+- **Impact:** Exposure, modification, or deletion of customer records.
+- **Prevention:** Keep databases on private networks, restrict permitted clients, use strong authentication, and apply least-privilege database permissions.
