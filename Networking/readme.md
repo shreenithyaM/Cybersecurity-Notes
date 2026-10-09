@@ -75,11 +75,10 @@ Understanding ports and commonly used network protocols.
 Topics include:
 - TCP
 - UDP
-- TCP vs UDP
 - Ports
 - Sockets
 - Well-Known Ports
-- Common Network Protocols
+
 
 | Protocol | Port | Purpose |
 |---|---:|---|
@@ -125,11 +124,6 @@ Topics include:
 - NS
 - TXT
 - DNS Cache
-Example:
-
-nslookup example.com
-dig example.com
-host example.com
 
 📄 [DNS](./DNS.md)
 
@@ -165,7 +159,11 @@ Topics include:
 - ICMP
 - Three way Hand-shake
 
-📄 TCP/IP Model
+📄 [TCP/IP Model](./TCP-IP%20Model.md)
+
+📄 [TCP Flags](./TCP-Flags.md)
+
+📄 [TCP Three way Hand-shake](./TCP-Flags.md)
 
 ---
 
