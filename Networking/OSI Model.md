@@ -25,12 +25,12 @@ It is the **structured design of a communication system** that defines how data 
 ## The 7 layers of the OSI model
 A common mnemonic: **"Please Do Not Throw Sausage Pizza Away"**
 1. Application Layer - [Application Layer](./OSI%20Layers/1.%20Application%20Layer.md)
-2. Presentation Layer - [[6 Presentation Layer]]
-3. Session Layer - [[5 Session Layer]]
-4. Transport Layer - [[4 Transport Layer]]
-5. Network Layer - [[3 Network Layer]]
-6. Data Link Layer - [[2 Data Link Layer]]
-7. Physical Layer - [[1 Physical Layer]]
+2. Presentation Layer - [Presentation Layer](./OSI%20Layers/2.%20Presentation%20Layer.md)
+3. Session Layer - [Session Layer](./OSI%20Layers/3.%20Session%20Layer.md)
+4. Transport Layer - [Transport Layer](./OSI%20Layers/4.%20Transport%20Layer.md)
+5. Network Layer - [Network Layer](./OSI%20Layers/5.%20Network%20Layer.md)
+6. Data Link Layer - [Data Link Layer](./OSI%20Layers/6.%20DataLink%20Layer.md)
+7. Physical Layer - [Physical Layer](./OSI%20Layers/7.%20Physical%20Layer.md)
 
 ---
 ## **Software-Based Layers (OSI Model Upper Layers)**
