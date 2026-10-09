@@ -29,7 +29,7 @@ A common mnemonic: **"Please Do Not Throw Sausage Pizza Away"**
 3. Session Layer - [Session Layer](./OSI%20Layers/3.%20Session%20Layer.md)
 4. Transport Layer - [Transport Layer](./OSI%20Layers/4.%20Transport%20Layer.md)
 5. Network Layer - [Network Layer](./OSI%20Layers/5.%20Network%20Layer.md)
-6. Data Link Layer - [Data Link Layer](./OSI%20Layers/6.%20DataLink%20Layer.md)
+6. Data Link Layer - [Datalink Layer](./OSI%20Layers/6.%20Datalink%20Layer.md)
 7. Physical Layer - [Physical Layer](./OSI%20Layers/7.%20Physical%20Layer.md)
 
 ---
