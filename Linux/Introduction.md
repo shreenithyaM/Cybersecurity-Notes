@@ -41,5 +41,10 @@ firefox <URL>
 
 e.g., firefox https://github.com
 
+## Convert user to root user
+```sudo
+sudo su
+```
+
 ---
 
