@@ -141,3 +141,110 @@ Four steps:
 
 The TCP connection is now closed.
 
+
+## 9. UDP Communication (How UDP Sends Data)
+
+UDP (User Datagram Protocol) sends data without establishing a connection.
+
+How it works:
+
+1.  Sender prepares data.
+
+2.  UDP divides the data into datagrams.
+
+3.  Sender sends datagrams to the receiver.
+
+4.  Receiver receives the datagrams if they arrive.
+
+5.  No acknowledgement or retransmission is provided by UDP itself.
+
+Important points:
+
+-   No three-way handshake.
+
+-   No connection establishment.
+
+-   Faster communication with low overhead.
+
+-   No guarantee of delivery or ordering.
+
+
+
+## 10. UDP Datagram
+
+A UDP datagram is a packet of data sent using UDP.
+
+UDP Header contains 4 fields:
+
+| Field | Purpose |
+| --- | --- |
+| Source Port | Identifies sender application |
+| Destination Port | Identifies receiver application |
+| Length | Total length of UDP header and data |
+| Checksum | Detects errors in the datagram |
+
+Important points:
+
+-   UDP header size is 8 bytes.
+
+-   UDP is connectionless.
+
+-   Each datagram is handled independently.
+
+
+## 11\. What Happens When Packets Are Lost?
+
+In UDP, if a packet is lost during transmission:
+
+-   Receiver does not receive that packet.
+
+-   UDP does not automatically resend it.
+
+-   Other packets can still reach the receiver.
+
+-   The application may detect the missing data and handle it if needed.
+
+Example:
+
+Sender sends 5 packets:
+
+`1 → 2 → 3 → 4 → 5`
+
+Packet 3 is lost.
+
+Receiver gets:
+
+`1 → 2 → ❌ → 4 → 5`
+
+UDP does not automatically retransmit packet 3.
+
+
+## 12\. Real-World Applications of TCP & UDP
+
+### TCP Applications
+
+TCP is used when reliable data delivery is important.
+
+-   HTTP/HTTPS: Website communication (HTTP/3 is an exception; it uses QUIC over UDP).
+
+-   FTP: File transfer.
+
+-   SSH: Secure remote access.
+
+-   SMTP: Sending emails.
+
+-   IMAP: Receiving and managing emails.
+
+### UDP Applications
+
+UDP is used when low latency and speed are important.
+
+-   Online Gaming: Fast communication between players and servers.
+
+-   Video Calls: Real-time audio and video.
+
+-   Live Streaming: Real-time media delivery.
+
+-   DNS: Domain name resolution (typically UDP).
+
+-   DHCP: Automatic IP address assignment.
